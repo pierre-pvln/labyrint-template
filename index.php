@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.beez3
+ * @subpackage  Templates.labyrint3
  * 
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -112,18 +112,18 @@ $doc->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/
 						</span></h1>
 					</div><!-- end logoheader -->
 					<ul class="skiplinks">
-						<li><a href="#main" class="u2"><?php echo JText::_('TPL_BEEZ3_SKIP_TO_CONTENT'); ?></a></li>
-						<li><a href="#nav" class="u2"><?php echo JText::_('TPL_BEEZ3_JUMP_TO_NAV'); ?></a></li>
+						<li><a href="#main" class="u2"><?php echo JText::_('TPL_LABYRINT3_SKIP_TO_CONTENT'); ?></a></li>
+						<li><a href="#nav" class="u2"><?php echo JText::_('TPL_LABYRINT3_JUMP_TO_NAV'); ?></a></li>
 						<?php if ($showRightColumn) : ?>
-							<li><a href="#right" class="u2"><?php echo JText::_('TPL_BEEZ3_JUMP_TO_INFO'); ?></a></li>
+							<li><a href="#right" class="u2"><?php echo JText::_('TPL_LABYRINT3_JUMP_TO_INFO'); ?></a></li>
 						<?php endif; ?>
 					</ul>
-					<h2 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAV_VIEW_SEARCH'); ?></h2>
-					<h3 class="unseen"><?php echo JText::_('TPL_BEEZ3_NAVIGATION'); ?></h3>
+					<h2 class="unseen"><?php echo JText::_('TPL_LABYRINT3_NAV_VIEW_SEARCH'); ?></h2>
+					<h3 class="unseen"><?php echo JText::_('TPL_LABYRINT3_NAVIGATION'); ?></h3>
 					<jdoc:include type="modules" name="position-1" />
 					<div id="line">
 						<div id="fontsize"></div>
-						<h3 class="unseen"><?php echo JText::_('TPL_BEEZ3_SEARCH'); ?></h3>
+						<h3 class="unseen"><?php echo JText::_('TPL_LABYRINT3_SEARCH'); ?></h3>
 						<jdoc:include type="modules" name="position-0" />
 					</div> <!-- end line -->
 				</header><!-- end header -->
@@ -134,9 +134,9 @@ $doc->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/
 
 					<?php if ($navposition == 'left' and $showleft) : ?>
 						<nav class="left1 <?php if ($showRightColumn == null) { echo 'leftbigger';} ?>" id="nav">
-							<jdoc:include type="modules" name="position-7" style="beezDivision" headerLevel="3" />
-							<jdoc:include type="modules" name="position-4" style="beezHide" headerLevel="3" state="0 " />
-							<jdoc:include type="modules" name="position-5" style="beezTabs" headerLevel="2"  id="3" />
+							<jdoc:include type="modules" name="position-7" style="labyrintDivision" headerLevel="3" />
+							<jdoc:include type="modules" name="position-4" style="labyrintHide" headerLevel="3" state="0 " />
+							<jdoc:include type="modules" name="position-5" style="labyrintTabs" headerLevel="2"  id="3" />
 						</nav><!-- end navi -->
 					<?php endif; ?>
 
@@ -159,25 +159,25 @@ $doc->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/
 						<div id="close">
 							<a href="#" onclick="auf('right')">
 							<span id="bild">
-								<?php echo JText::_('TPL_BEEZ3_TEXTRIGHTCLOSE'); ?>
+								<?php echo JText::_('TPL_LABYRINT3_TEXTRIGHTCLOSE'); ?>
 							</span>
 							</a>
 						</div>
 
 						<aside id="right">
-							<h2 class="unseen"><?php echo JText::_('TPL_BEEZ3_ADDITIONAL_INFORMATION'); ?></h2>
-							<jdoc:include type="modules" name="position-6" style="beezDivision" headerLevel="3" />
-							<jdoc:include type="modules" name="position-8" style="beezDivision" headerLevel="3" />
-							<jdoc:include type="modules" name="position-3" style="beezDivision" headerLevel="3" />
+							<h2 class="unseen"><?php echo JText::_('TPL_LABYRINT3_ADDITIONAL_INFORMATION'); ?></h2>
+							<jdoc:include type="modules" name="position-6" style="labyrintDivision" headerLevel="3" />
+							<jdoc:include type="modules" name="position-8" style="labyrintDivision" headerLevel="3" />
+							<jdoc:include type="modules" name="position-3" style="labyrintDivision" headerLevel="3" />
 						</aside><!-- end right -->
 					<?php endif; ?>
 
 					<?php if ($navposition == 'center' and $showleft) : ?>
 						<nav class="left <?php if ($showRightColumn == null) { echo 'leftbigger'; } ?>" id="nav" >
 
-							<jdoc:include type="modules" name="position-7"  style="beezDivision" headerLevel="3" />
-							<jdoc:include type="modules" name="position-4" style="beezHide" headerLevel="3" state="0 " />
-							<jdoc:include type="modules" name="position-5" style="beezTabs" headerLevel="2"  id="3" />
+							<jdoc:include type="modules" name="position-7"  style="labyrintDivision" headerLevel="3" />
+							<jdoc:include type="modules" name="position-4" style="labyrintHide" headerLevel="3" state="0 " />
+							<jdoc:include type="modules" name="position-5" style="labyrintTabs" headerLevel="2"  id="3" />
 
 						</nav><!-- end navi -->
 					<?php endif; ?>
@@ -192,9 +192,9 @@ $doc->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/
 				<div id="footer-inner" >
 
 					<div id="bottom">
-						<div class="box box1"> <jdoc:include type="modules" name="position-9" style="beezDivision" headerlevel="3" /></div>
-						<div class="box box2"> <jdoc:include type="modules" name="position-10" style="beezDivision" headerlevel="3" /></div>
-						<div class="box box3"> <jdoc:include type="modules" name="position-11" style="beezDivision" headerlevel="3" /></div>
+						<div class="box box1"> <jdoc:include type="modules" name="position-9" style="labyrintDivision" headerlevel="3" /></div>
+						<div class="box box2"> <jdoc:include type="modules" name="position-10" style="labyrintDivision" headerlevel="3" /></div>
+						<div class="box box3"> <jdoc:include type="modules" name="position-11" style="labyrintDivision" headerlevel="3" /></div>
 					</div>
 
 				</div>

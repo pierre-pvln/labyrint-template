@@ -68,13 +68,13 @@ function saveSettings() {
 
 window.addEvent('domready', function () {
 
-    smaller = Joomla.JText._('TPL_BEEZ3_SMALLER');
-    fontSizeTitle = Joomla.JText._('TPL_BEEZ3_FONTSIZE');
-    bigger = Joomla.JText._('TPL_BEEZ3_BIGGER');
-    reset = Joomla.JText._('TPL_BEEZ3_RESET');
-    biggerTitle = Joomla.JText._('TPL_BEEZ3_INCREASE_SIZE');
-    smallerTitle = Joomla.JText._('TPL_BEEZ3_DECREASE_SIZE');
-    resetTitle = Joomla.JText._('TPL_BEEZ3_REVERT_STYLES_TO_DEFAULT');
+    smaller = Joomla.JText._('TPL_LABYRINT3_SMALLER');
+    fontSizeTitle = Joomla.JText._('TPL_LABYRINT3_FONTSIZE');
+    bigger = Joomla.JText._('TPL_LABYRINT3_BIGGER');
+    reset = Joomla.JText._('TPL_LABYRINT3_RESET');
+    biggerTitle = Joomla.JText._('TPL_LABYRINT3_INCREASE_SIZE');
+    smallerTitle = Joomla.JText._('TPL_LABYRINT3_DECREASE_SIZE');
+    resetTitle = Joomla.JText._('TPL_LABYRINT3_REVERT_STYLES_TO_DEFAULT');
 
 });
 window.addEvent('domready', setUserOptions);

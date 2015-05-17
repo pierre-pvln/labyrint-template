@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.beez3
+ * @subpackage  Templates.labyrint3
  *
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -104,12 +104,12 @@ $this->direction = $doc->direction;
 					<ul class="skiplinks">
 						<li>
 							<a href="#wrapper2" class="u2">
-								<?php echo JText::_('TPL_BEEZ3_SKIP_TO_ERROR_CONTENT'); ?>
+								<?php echo JText::_('TPL_LABYRINT3_SKIP_TO_ERROR_CONTENT'); ?>
 							</a>
 						</li>
 						<li>
 							<a href="#nav" class="u2">
-								<?php echo JText::_('TPL_BEEZ3_ERROR_JUMP_TO_NAV'); ?>
+								<?php echo JText::_('TPL_LABYRINT3_ERROR_JUMP_TO_NAV'); ?>
 							</a>
 						</li>
 					</ul>
@@ -119,7 +119,7 @@ $this->direction = $doc->direction;
 				<div id="contentarea2" >
 					<div class="left1" id="nav">
 						<h2 class="unseen">
-							<?php echo JText::_('TPL_BEEZ3_NAVIGATION'); ?>
+							<?php echo JText::_('TPL_LABYRINT3_NAVIGATION'); ?>
 						</h2>
 						<?php $module = JModuleHelper::getModule('menu'); ?>
 						<?php echo JModuleHelper::renderModule($module); ?>
@@ -140,7 +140,7 @@ $this->direction = $doc->direction;
 							<?php if (JModuleHelper::getModule('search')) : ?>
 								<div id="searchbox">
 									<h3 class="unseen">
-										<?php echo JText::_('TPL_BEEZ3_SEARCH'); ?>
+										<?php echo JText::_('TPL_LABYRINT3_SEARCH'); ?>
 									</h3>
 									<p>
 										<?php echo JText::_('JERROR_LAYOUT_SEARCH'); ?>
@@ -172,7 +172,7 @@ $this->direction = $doc->direction;
 			<div id="footer-sub">
 				<div id="footer">
 				<p>
-					<?php echo JText::_('TPL_BEEZ3_POWERED_BY'); ?>
+					<?php echo JText::_('TPL_LABYRINT3_POWERED_BY'); ?>
 					<a href="http://www.joomla.org/">
 						Joomla!&#174;
 					</a>

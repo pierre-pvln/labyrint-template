@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.beez3
+ * @subpackage  Templates.labyrint3
  *
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -10,11 +10,11 @@
 defined('_JEXEC') or die;
 
 /**
- * beezDivision chrome.
+ * labyrintDivision chrome.
  *
  * @since   3.0
  */
-function modChrome_beezDivision($module, &$params, &$attribs)
+function modChrome_labyrintDivision($module, &$params, &$attribs)
 {
 	$headerLevel = isset($attribs['headerLevel']) ? (int) $attribs['headerLevel'] : 3;
 	if (!empty ($module->content)) { ?>
@@ -25,11 +25,11 @@ function modChrome_beezDivision($module, &$params, &$attribs)
 }
 
 /**
- * beezHide chrome.
+ * labyrintHide chrome.
  *
  * @since   3.0
  */
-function modChrome_beezHide($module, &$params, &$attribs)
+function modChrome_labyrintHide($module, &$params, &$attribs)
 {
 	$headerLevel = isset($attribs['headerLevel']) ? (int) $attribs['headerLevel'] : 3;
 	$state = isset($attribs['state']) ? (int) $attribs['state'] :0;
@@ -39,11 +39,11 @@ function modChrome_beezHide($module, &$params, &$attribs)
 <div
 	class="moduletable_js <?php echo htmlspecialchars($params->get('moduleclass_sfx'));?>"><?php if ($module->showtitle) : ?>
 <h<?php echo $headerLevel; ?> class="js_heading"> <?php echo $module->title; ?> <a href="#"
-	title="<?php echo JText::_('TPL_BEEZ3_CLICK'); ?>"
+	title="<?php echo JText::_('TPL_LABYRINT3_CLICK'); ?>"
 	onclick="auf('module_<?php echo $module->id; ?>'); return false"
 	class="opencloselink" id="link_<?php echo $module->id?>"> <span
-	class="no"><img src="templates/beez3/images/plus.png"
-	alt="<?php if ($state == 1) { echo JText::_('TPL_BEEZ3_ALTOPEN');} else {echo JText::_('TPL_BEEZ3_ALTCLOSE');} ?>" />
+	class="no"><img src="templates/labyrint3/images/plus.png"
+	alt="<?php if ($state == 1) { echo JText::_('TPL_LABYRINT3_ALTOPEN');} else {echo JText::_('TPL_LABYRINT3_ALTCLOSE');} ?>" />
 </span></a></h<?php echo $headerLevel; ?>> <?php endif; ?>
 <div class="module_content <?php if ($state == 1){echo "open";} ?>"
 	id="module_<?php echo $module->id; ?>" tabindex="-1"><?php echo $module->content; ?></div>
@@ -52,11 +52,11 @@ function modChrome_beezHide($module, &$params, &$attribs)
 }
 
 /**
- * beezTabs chrome.
+ * labyrintTabs chrome.
  *
  * @since   3.0
  */
-function modChrome_beezTabs($module, $params, $attribs)
+function modChrome_labyrintTabs($module, $params, $attribs)
 {
 	$area = isset($attribs['id']) ? (int) $attribs['id'] :'1';
 	$area = 'area-'.$area;
@@ -97,7 +97,7 @@ function modChrome_beezTabs($module, $params, $attribs)
 			echo $rendermodule->content;
 			if ($counter != count($modules))
 			{
-			echo '<a href="#" class="unseen" onclick="nexttab(\'module_'. $rendermodule->id.'\');return false;" id="next_'.$rendermodule->id.'">'.JText::_('TPL_BEEZ3_NEXTTAB').'</a>';
+			echo '<a href="#" class="unseen" onclick="nexttab(\'module_'. $rendermodule->id.'\');return false;" id="next_'.$rendermodule->id.'">'.JText::_('TPL_LABYRINT3_NEXTTAB').'</a>';
 			}
 			echo '</div>';
 		}

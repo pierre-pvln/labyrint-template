@@ -259,8 +259,8 @@ var mobileMenu = function(){
 	};
 
 	var createElements = function () {
-		var Openmenu=Joomla.JText._('TPL_BEEZ3_OPENMENU');
-		var Closemenu=Joomla.JText._('TPL_BEEZ3_CLOSEMENU');
+		var Openmenu=Joomla.JText._('TPL_LABYRINT3_OPENMENU');
+		var Closemenu=Joomla.JText._('TPL_LABYRINT3_CLOSEMENU');
 		$menu = $("#header").find('ul.menu').first();
 		$menuWrapper = $('<div>', {id : 'menuwrapper', role: 'menubar'});
 
