@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
-<extension version="3.1" type="template" client="site">
+<extension version="3.1" type="template" client="site" method="install">
 	<name>labyrint3</name>
 	<creationDate>17 may 2015</creationDate>
 	<author>Siteadmin Labyrint</author>
@@ -105,6 +105,7 @@
 					<option value="personal">TPL_LABYRINT3_OPTION_PERSONAL</option>
 					<option value="red">TPL_LABYRINT3_OPTION_RED</option>
 					<option value="turq">TPL_LABYRINT3_OPTION_TURQ</option>
+					<option value="orange">TPL_LABYRINT3_OPTION_ORANGE</option>
 					<option value="image">TPL_LABYRINT3_OPTION_IMAGE</option>
 				</field>
 
