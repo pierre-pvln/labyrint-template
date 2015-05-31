@@ -1,8 +1,15 @@
-/*  The colors used in this template    */
+/* color settings */
 /*
  * Based on nature.css form Beez3 template @author ( Angie Radtke )
  * 
  * Customized and changed to .less by Pierre Veelen (24-05-2015)
+ * 
+*/
+/* color settings */
+/*
+ * ##########################  COLORS  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
  * 
 */
 /*  The colors used in this template    */
@@ -12,6 +19,7 @@
 /* rgb(51,51,51)	= #333333 = #333	*/
 /* rgb(68,68,68)	= #444444 = #444	*/
 /* rgb(85,85,85)	= #555555 = #555	*/
+/* rgb(153,153,153)	= #999999 = #999	*/
 /* rgb(238,238,238)	= #eeeeee = #eee	*/
 /* rgb(245,245,245)	= #f5f5f5			*/
 /* rgb(248,248,248)	= #f8f8f8			*/
@@ -22,6 +30,7 @@
 /* rgb(204,204,204)	= #cccccc = #ccc	*/
 /* rgb(230,230,230)	= #E6E6E6			*/
 /* rgb(229,229,229)	= #e5e5e5			*/
+/* rgb(254,253,226)	= #FEFDE2			*/
 /* rgb(42,73,65)	= #2a4941			*/
 /* rgb(10,94,105)	= #0A5E69			*/
 /* rgb(50,87,78) 	= #32574E			*/
@@ -32,8 +41,20 @@
 /* rgb(0,119,116)	= #007774 			*/
 /* rgb(35,125,133)	= #237D85			*/
 /* rgb(189,223,179)	= #bddfb3			*/
-/* my settings */
-/* ##########################  general  ########################### */
+/* resources settings */
+/*
+ * ##########################  RESOURCES  ###########################
+ * 
+ * 
+*/
+/*  Folder for the images used in this template    */
+/* Generic images *//* Logo images */
+/* general settings */
+/* ##########################  GENERAL  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 body {
   font-family: arial, helvetica, sans-serif;
   background: #ffffff;
@@ -62,7 +83,13 @@ a:focus {
   background: #0a5e69;
   color: #ffffff;
 }
-/* ##########################  logo  ########################### */
+/* logo settings */
+/*
+ * ##########################  logo  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 .logoheader {
   border-top: solid 1px transparent;
   color: #ffffff;
@@ -77,6 +104,13 @@ a:focus {
 .logoheader h1#logo span.header1 {
   padding: 0;
 }
+/* header settings */
+/*
+ * ##########################  HEADER  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 /* ##########################  header  ########################### */
 #all {
   padding-top: 13em;
@@ -154,6 +188,13 @@ p.readmore a:hover,
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
   -webkit-font-smoothing: antialiased;
 }
+/* header menu settings */
+/*
+ * ##########################  HEADER_MENU  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 /* ++++++++++++++ header  menu ++++++++++++++ */
 #header ul.menu {
   border: 0;
@@ -221,6 +262,13 @@ h3.js_heading {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
   color: #004746;
 }
+/* navigation settings */
+/*
+ * ##########################  NAVIGATION  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 /* ++++++++++++++++++++++  navigation  ++++++++++++++++++++++++++  */
 .moduletable_menu {
   border: solid 1px #dddddd;
@@ -235,9 +283,16 @@ ul.menu a:focus {
   background-color: #f5f5f5;
   background-image: -moz-linear-gradient(center top, #ffffff, #e6e6e6);
   background-repeat: repeat-x;
-  background: url(../images/arrow.png) no-repeat right center;
+  background: url("../images/orange/arrow.png") no-repeat right center;
   color: #004746;
 }
+/* highlight_menu settings */
+/*
+ * ##########################  HIGHLIGHT_MENU  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 /* ++++++++++++++++   highlightning active menuitem  +++++++++++++++++++ */
 ul.menu li.active a,
 ul.menu li.active ul li.active a,
@@ -261,12 +316,22 @@ ul.menu ul a {
   margin-bottom: 1px;
 }
 ul.menu ul ul ul a {
-  background: #f5f5f5 url(../images/arrow.png) no-repeat 24px center;
+  background: #f5f5f5 url("../images/orange/arrow.png") no-repeat 24px center;
 }
 ul.menu ul ul ul ul a {
   background: #ffffff;
 }
-/* +++++++++++++++++  content  +++++++++++++++ */
+ul.menu a:link,
+ul.menu a:visited {
+  color: #444444;
+}
+/* content settings */
+/*
+ * ##########################  CONTENT  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 .article-info {
   background-color: #fbfbfb;
   background-image: -moz-linear-gradient(top, #ffffff, #f5f5f5);
@@ -282,10 +347,13 @@ ul.menu ul ul ul ul a {
   -moz-box-shadow: inset 0 1px 0 #ffffff;
   box-shadow: inset 0 1px 0 #ffffff;
 }
-ul.menu a:link,
-ul.menu a:visited {
-  color: #444444;
-}
+/* footer settings */
+/*
+ * ##########################  footer  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 #footer-inner,
 #footer,
 #footer-outer {
@@ -312,21 +380,33 @@ ul.menu a:visited {
   background-image: none;
   padding-left: 0;
 }
-/* +++++++++++++++++++++++  SLIDER  ++++++++++++++++++++  */
+/* slider settings */
+/*
+ * ##########################  SLIDER  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 .panel h3.pane-toggler a {
-  background: url(../images/slider_plus.png) right top no-repeat;
+  background: url("../images/orange/slider_plus.png") right top no-repeat;
   color: #333333;
 }
 .panel h3.pane-toggler-down a {
-  background: url(../images/slider_minus.png) right top no-repeat;
+  background: url("../images/orange/slider_minus.png") right top no-repeat;
   border-bottom: solid 1px #dddddd;
   color: #333333;
 }
-/*  +++++++++++++++++   Tabs ++++++++++++++++++++++  */
+/* tabs settings */
+/*
+ * ##########################  TABS  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 ul.tabs li,
 dl.tabs dt h3 a:link,
 dl.tabs dt h3 a:visited {
-  background: #f5f5f5 url(../images/nature/box.png) repeat-x;
+  background: #f5f5f5 url("../images/orange/box.png") repeat-x;
 }
 ul.tabs li a:link,
 ul.tabs li a:visited,
@@ -366,7 +446,13 @@ ul.tabs li a.linkopen:focus {
   background: #555555;
   color: #ffffff;
 }
-/* +++++++++++++++++  Pagination +++++++++++++++ */
+/* pagination settings */
+/*
+ * ##########################  PAGINATION  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 .pagination span,
 .pagination span a:hover {
   color: #999999;
@@ -384,6 +470,13 @@ span.pagenav {
   background-color: #f5f5f5;
   color: #444444;
 }
+/* table settings */
+/*
+ * ##########################  TABLE  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 /* +++++++++++++  table display  Catgegories table, contact etc, ++++++++++++++++++++* */
 table {
   border: solid 1px #dddddd;
@@ -402,9 +495,15 @@ tr.cat-list-row1 {
 }
 table tr:hover td,
 table tr:hover th {
-  background-color: #FEFDE2;
+  background-color: #fefde2;
 }
-/* responsive */
+/* responsive settings */
+/*
+ * ##########################  RESPONSIVE  ###########################
+ * 
+ * Orginal from nature.css from Beez3 template
+ * 
+*/
 #mobile_select h2 {
   border: 0;
   margin: -17px 0 0 0;
