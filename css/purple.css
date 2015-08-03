@@ -34,11 +34,11 @@
 */
 /*  Generic color definition            */
 /****************************************/
-/* orange-light-back = 	rgb(255,250,170)	= #FFFAAA			*/
-/* orange-light = 		rgb(247,102,17)		= #f76611			*/
-/* orang-dark =			rgb(191,10,10)		= #BF0A0A			*/
-/* yellow =				rgb(247,246,25)		= #f7f619			*/
-/* yellow-light =		rgb(255,255,128)	= #ffff80			*/
+/*@orange-very-light:	rgb(255,250,170);	/* orange-light-back = 	rgb(255,250,170)	= #FFFAAA			*/
+/* purple-dark =		rgb(86,1,125)		= #56017D			*/
+/* purple-light = 		rgb(240,2,127)		= #F0027F			*/
+/* purple-very-light =	rgb(252,199,226)	= #FCC7E2			*/
+/*@yellow-light:		rgb(255,255,128);	/* yellow-light =		rgb(255,255,128)	= #ffff80			*/
 /*  The basecolors used in this template    */
 /********************************************/
 /* Don't use black as textcolor but a little bit grey-isch */
@@ -115,7 +115,7 @@ body#shadow {
 }
 h3,
 body#shadow h3 {
-  color: #bf0a0a;
+  color: #56017d;
   font-family: calibri, arial, helvetica, sans-serif;
   font-weight: bold;
 }
@@ -124,34 +124,34 @@ h2 a {
 }
 h2,
 body#shadow h2 {
-  border-bottom: solid 1px #f76611;
-  color: #bf0a0a;
+  border-bottom: solid 1px #f0027f;
+  color: #56017d;
   font-family: perpetua, arial;
   text-transform: uppercase;
   font-weight: bold;
 }
 .moduletable h3 {
-  border-bottom: solid 1px #f76611;
+  border-bottom: solid 1px #f0027f;
   text-transform: uppercase;
-  color: #bf0a0a;
+  color: #56017d;
   font-family: perpetua, arial;
   font-weight: bold;
 }
 .items-row h2 {
-  border-top: solid 1px #f76611;
-  color: #bf0a0a;
+  border-top: solid 1px #f0027f;
+  color: #56017d;
   font-family: perpetua, arial;
   text-transform: uppercase;
 }
 a:link,
 a:visited {
-  color: #bf0a0a;
+  color: #56017d;
 }
 a:hover,
 a:active,
 a:focus {
-  color: #ffff80;
-  background: #bf0a0a;
+  color: #f0027f;
+  background: #56017d;
 }
 /* logo settings */
 /*
@@ -177,7 +177,7 @@ a:focus {
 */
 .logoheader {
   border-top: solid 1px transparent;
-  color: #bf0a0a;
+  color: #56017d;
   max-width: 1050px;
   margin: 37px auto;
   min-height: 20px;
@@ -230,21 +230,21 @@ a:focus {
   top: 0em;
 }
 #header {
-  background: #bf0a0a;
+  background: #56017d;
   /* Old browsers */
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf0a0a, endColorstr=#f76611);
-  background: -moz-linear-gradient(top, #bf0a0a 0%, #f76611 25%, white 18%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#56017d, endColorstr=#f0027f);
+  background: -moz-linear-gradient(top, #56017d 0%, #f0027f 25%, white 18%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bf0a0a), color-stop(25%, #f76611), color-stop(18%, white));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #56017d), color-stop(25%, #f0027f), color-stop(18%, white));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #bf0a0a 0%, #f76611 25%, white 18%);
+  background: -webkit-linear-gradient(top, #56017d 0%, #f0027f 25%, white 18%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #bf0a0a 0%, #f76611 25%, white 18%);
+  background: -o-linear-gradient(top, #56017d 0%, #f0027f 25%, white 18%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #bf0a0a 0%, #f76611 25%, white 18%);
+  background: -ms-linear-gradient(top, #56017d 0%, #f0027f 25%, white 18%);
   /* IE10+ */
-  background: linear-gradient(top, #bf0a0a 0%, #f76611 25%, white 18%);
+  background: linear-gradient(top, #56017d 0%, #f0027f 25%, white 18%);
   /* W3C */
   position: absolute;
   left: 0;
@@ -270,19 +270,19 @@ p.readmore a:hover,
 #fontsize a:focus,
 #mobile_select h2 a {
   color: #333333;
-  background: #bf0a0a;
+  background: #56017d;
   /* Old browsers */
-  background-color: #bf0a0a;
+  background-color: #56017d;
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bf0a0a, endColorstr=#f76611);
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#bf0a0a), to(#f76611));
-  background-image: -moz-linear-gradient(top, #bf0a0a, #f76611);
-  background-image: -ms-linear-gradient(top, #bf0a0a, #f76611);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bf0a0a), color-stop(100%, #f76611));
-  background-image: -webkit-linear-gradient(top, #bf0a0a, #f76611);
-  background-image: -o-linear-gradient(top, #bf0a0a, #f76611);
-  background-image: linear-gradient(#bf0a0a, #f76611);
-  border-color: #f76611 #f76611 #bf0a0a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#56017d, endColorstr=#f0027f);
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#56017d), to(#f0027f));
+  background-image: -moz-linear-gradient(top, #56017d, #f0027f);
+  background-image: -ms-linear-gradient(top, #56017d, #f0027f);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #56017d), color-stop(100%, #f0027f));
+  background-image: -webkit-linear-gradient(top, #56017d, #f0027f);
+  background-image: -o-linear-gradient(top, #56017d, #f0027f);
+  background-image: linear-gradient(#56017d, #f0027f);
+  border-color: #f0027f #f0027f #56017d;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
   -webkit-font-smoothing: antialiased;
 }
@@ -334,12 +334,12 @@ p.readmore a:hover,
 */
 #header ul.menu li a:link,
 #header ul.menu li a:visited {
-  color: #f7f619;
+  color: #fcc7e2;
   border: 0;
-  border-right: solid 1px #f76611;
+  border-right: solid 1px #f0027f;
   box-shadow: none;
   /*	background:transparent; */
-  background: #bf0a0a;
+  background: #56017d;
   padding: 10px ;
   display: inline-block;
 }
@@ -352,8 +352,8 @@ p.readmore a:hover,
 #header ul.menu li a:hover,
 #header ul.menu li a:active,
 #header ul.menu li a:focus {
-  color: #f7f619;
-  background: #f76611;
+  color: #f0027f;
+  background: #56017d;
   padding: 10px;
 }
 /*
@@ -361,14 +361,14 @@ p.readmore a:hover,
 */
 #header ul li.active a:link,
 #header ul li.active a:visited {
-  color: #bf0a0a;
-  border-right: solid 1px #ffff80;
-  background: #ffff80;
+  color: #56017d;
+  border-right: solid 1px #f0027f;
+  background: #fcc7e2;
   padding: 10px  ;
 }
 #fontsize a,
 #fontsize h3 {
-  color: #bf0a0a;
+  color: #56017d;
 }
 /*  orange background */
 .button,
@@ -383,9 +383,9 @@ h3.js_heading {
   background-color: #f5f5f5;
   background-image: -moz-linear-gradient(center top, white, #e6e6e6);
   background-repeat: repeat-x;
-  border: solid 1px #f76611;
+  border: solid 1px #f0027f;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
-  color: #f76611;
+  color: #f0027f;
 }
 /* navigation settings */
 /*
@@ -412,7 +412,7 @@ h3.js_heading {
  * ###############################################################
 */
 #header ul.menu {
-  border-color: #f76611;
+  border-color: #f0027f;
 }
 ul.menu a:hover,
 ul.menu a:active,
@@ -420,8 +420,8 @@ ul.menu a:focus {
   background-color: #f5f5f5;
   background-image: -moz-linear-gradient(center top, white, #e6e6e6);
   background-repeat: repeat-x;
-  background: url("../images/orange/arrow-dark-orange.png") no-repeat right center;
-  color: #bf0a0a;
+  background: url("../images/purple/arrow-dark-purple.png") no-repeat right center;
+  color: #56017d;
 }
 /* highlight_menu settings */
 /*
@@ -464,7 +464,7 @@ ul.menu li.active ul li.active ul li.active ul li.active ul li a {
 }
 ul.menu a {
   box-shadow: 0 1px 0 white;
-  border-bottom: solid 1px #f76611;
+  border-bottom: solid 1px #f0027f;
   /* Change the text in the menuitems to uppercase */
   text-transform: uppercase;
 }
@@ -472,19 +472,19 @@ ul.menu ul a {
   margin-bottom: 1px;
 }
 ul.menu ul ul ul a {
-  background: #f5f5f5 url("../images/orange/arrow-dark-orange.png") no-repeat 24px center;
-  color: #bf0a0a;
+  background: #f5f5f5 url("../images/purple/arrow-dark-purple.png") no-repeat 24px center;
+  color: #56017d;
 }
 ul.menu ul ul ul ul a {
   background: white;
 }
 ul.menu a:link,
 ul.menu a:visited {
-  color: #f76611;
+  color: #f0027f;
 }
 /* Change the textcolor of the menutext on hover */
 ul.menu a:hover {
-  color: #bf0a0a;
+  color: #56017d;
 }
 /* content settings */
 /*
@@ -520,7 +520,7 @@ ul.menu a:hover {
   background-image: linear-gradient(top, white, #f5f5f5);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=white, endColorstr=#f5f5f5, GradientType=0);
-  border: 1px solid #f76611;
+  border: 1px solid #f0027f;
   -webkit-box-shadow: inset 0 1px 0 white;
   -moz-box-shadow: inset 0 1px 0 white;
   box-shadow: inset 0 1px 0 white;
@@ -553,27 +553,27 @@ ul.menu a:hover {
 #footer-inner,
 #footer,
 #footer-outer {
-  background: #bf0a0a;
+  background: #56017d;
 }
 #footer-sub {
-  background: #bf0a0a;
+  background: #56017d;
 }
 /*#footer {background:@c-text-background-inverse; max-width:1025px; margin:0 auto; } */
 #footer {
-  background: #bf0a0a;
-  color: #f7f619;
+  background: #56017d;
+  color: #fcc7e2;
   max-width: 1025px;
   margin: 0 auto;
   text-align: center;
 }
 #footer a {
-  color: #ffff80;
+  color: #f0027f;
 }
 .box1 {
-  border-right: solid 1px #f76611;
+  border-right: solid 1px #f0027f;
 }
 .box3 {
-  border-left: solid 1px #f76611;
+  border-left: solid 1px #f0027f;
 }
 #bottom ul li a {
   background-image: none;
@@ -604,13 +604,13 @@ ul.menu a:hover {
  * ###############################################################
 */
 .panel h3.pane-toggler a {
-  background: url("../images/orange/slider_plus.png") right top no-repeat;
-  color: #bf0a0a;
+  background: url("../images/purple/slider_plus.png") right top no-repeat;
+  color: #56017d;
 }
 .panel h3.pane-toggler-down a {
-  background: url("../images/orange/slider_minus.png") right top no-repeat;
-  border-bottom: solid 1px #f76611;
-  color: #bf0a0a;
+  background: url("../images/purple/slider_minus.png") right top no-repeat;
+  border-bottom: solid 1px #f0027f;
+  color: #56017d;
 }
 /* tabs settings */
 /*
@@ -640,13 +640,13 @@ ul.menu a:hover {
 ul.tabs li,
 dl.tabs dt h3 a:link,
 dl.tabs dt h3 a:visited {
-  background: #f5f5f5 url("../images/orange/box.png") repeat-x;
+  background: #f5f5f5 url("../images/purple/box.png") repeat-x;
 }
 ul.tabs li a:link,
 ul.tabs li a:visited,
 dl.tabs dt a {
   color: #333333;
-  border: solid 1px #f76611;
+  border: solid 1px #f0027f;
   border-bottom: 0;
 }
 ul.tabs li a:hover,
@@ -658,7 +658,7 @@ ul.tabs li a:focus {
 div.current {
   background: white;
   color: #333333;
-  border: solid 1px #f76611;
+  border: solid 1px #f0027f;
 }
 .tabcontent .linkclosed {
   color: #333333;
@@ -677,7 +677,7 @@ ul.tabs li a.linkclosed:focus,
 ul.tabs li a.linkopen:hover,
 ul.tabs li a.linkopen:active,
 ul.tabs li a.linkopen:focus {
-  background: #bf0a0a;
+  background: #56017d;
   color: white;
 }
 /* pagination settings */
@@ -713,7 +713,7 @@ ul.tabs li a.linkopen:focus {
 }
 /* active item */
 span.pagenav {
-  background: #bf0a0a;
+  background: #56017d;
   color: white;
 }
 .pagination-start span.pagenav,
@@ -752,19 +752,19 @@ span.pagenav {
 */
 /* +++++++++++++  table display  Categories table, contact etc, ++++++++++++++++++++* */
 table {
-  border: solid 1px #f76611;
+  border: solid 1px #f0027f;
 }
 /* table header row */
 table th {
-  background-color: #bf0a0a;
-  color: #ffff80;
+  background-color: #56017d;
+  color: #f0027f;
 }
 table td {
-  border-bottom: solid 1px #f76611;
+  border-bottom: solid 1px #f0027f;
 }
 table th a:link,
 table th a:visited {
-  color: #ffff80;
+  color: #f0027f;
 }
 tr.odd,
 tr.cat-list-row1 {
@@ -772,7 +772,7 @@ tr.cat-list-row1 {
 }
 table tr:hover td,
 table tr:hover th {
-  background-color: #fffaaa;
+  background-color: #fff7fb;
 }
 /* responsive settings */
 /*
@@ -805,7 +805,7 @@ table tr:hover th {
   border: 0;
   margin: -17px 0 0 0;
   padding: 0;
-  background: #f76611;
+  background: #f0027f;
   text-align: right;
 }
 #mobile_select h2 a {
@@ -854,13 +854,13 @@ table tr:hover th {
     padding-top: 0;
   }
   .logoheader {
-    background: #bf0a0a;
+    background: #56017d;
     min-height: 100px;
     margin: 0;
   }
   .box {
     border-left: 0 !important;
-    border-bottom: solid 1px #f76611;
+    border-bottom: solid 1px #f0027f;
   }
   #line {
     text-align: center;
@@ -869,7 +869,7 @@ table tr:hover th {
     max-width: 100% ;
     min-width: 100%;
     margin: 0 0px;
-    background: #bf0a0a;
+    background: #56017d;
     position: absolute;
   }
   #header form input {
@@ -904,9 +904,9 @@ table tr:hover th {
     display: block;
     padding: 6px 10px;
     border-right: 0;
-    border-bottom: solid 1px #f76611;
+    border-bottom: solid 1px #f0027f;
     background: white;
-    color: #bf0a0a;
+    color: #56017d;
   }
 }
 @media only screen and (min-width: 1382px) {
@@ -938,7 +938,7 @@ table tr:hover th {
 /* Put watermark on every page */
 #contentarea,
 #contentarea2 {
-  background: rgba(0, 0, 0, 0) url("../images/orange/watermark/labyrint_watermerk_web.png") no-repeat scroll center top;
+  background: rgba(0, 0, 0, 0) url("../images/purple/watermark/labyrint_watermerk_web.png") no-repeat scroll center top;
 }
 /* class suffix settings */
 /*
@@ -972,7 +972,7 @@ Module class achtervoegsel _menu
 */
 /* Zet een rand om het menu en een bijbehorende achtergrond */
 .moduletable_menu {
-  border: solid 1px #f76611;
+  border: solid 1px #f0027f;
   background: #fafafa;
 }
 /*

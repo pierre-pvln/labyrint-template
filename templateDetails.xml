@@ -106,6 +106,7 @@
 					<option value="red">TPL_LABYRINT3_OPTION_RED</option>
 					<option value="turq">TPL_LABYRINT3_OPTION_TURQ</option>
 					<option value="orange">TPL_LABYRINT3_OPTION_ORANGE</option>
+					<option value="purple">TPL_LABYRINT3_OPTION_PURPLE</option>
 					<option value="image">TPL_LABYRINT3_OPTION_IMAGE</option>
 				</field>
 
