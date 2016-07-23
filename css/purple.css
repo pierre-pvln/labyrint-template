@@ -192,6 +192,7 @@ a:focus {
 /* make sure that text can be placed next to the logo image */
 #logo {
   float: left;
+  width: 340px;
 }
 /* header settings */
 /*
@@ -532,12 +533,12 @@ ul.menu a:hover {
  * Orginal from nature.css from Beez3 template
  * 
  * Author:	Pierre Veelen
- * E-mail:	pierre.veelen@gmail.com
- * Date:	2015-08-02
+ * E-mail:	pierre.veelen@pvln.nl
+ * Date:	2016-07-17
  *
  * Brief description of what is used for:
  * ======================================
- * TO BE SUPPLIED
+ * CSS styling for footer
  *
  * LESS colors used:
  * =================
@@ -559,7 +560,9 @@ ul.menu a:hover {
   background: #56017d;
 }
 /*#footer {background:@c-text-background-inverse; max-width:1025px; margin:0 auto; } */
-#footer {
+#footer,
+.footer1,
+.footer2 {
   background: #56017d;
   color: #fcc7e2;
   max-width: 1025px;

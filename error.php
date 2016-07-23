@@ -5,6 +5,23 @@
  *
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ *
+ * ###############################################################
+ * Orginal error.php from Beez3 template
+ * 
+ * Author:	Pierre Veelen
+ * E-mail:	pierre.veelen@pvln.nl
+ * Date:	2016-07-14
+ *
+ * Brief description of what is used for:
+ * ======================================
+ * TO BE SUPPLIED
+ *
+ * ###############################################################
+ *  
+ * 
+ * See also" https://docs.joomla.org/Custom_error_pages 
+ *
  */
 
 defined('_JEXEC') or die;
@@ -31,6 +48,7 @@ $this->direction = $doc->direction;
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
 <title><?php echo $this->error->getCode(); ?> - <?php echo htmlspecialchars($this->error->getMessage(), ENT_QUOTES, 'UTF-8'); ?></title>
 
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/system/css/system.css" type="text/css" />
@@ -38,7 +56,8 @@ $this->direction = $doc->direction;
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/position.css" type="text/css" media="screen,projection" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/layout.css" type="text/css" media="screen,projection" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/print.css" type="text/css" media="Print" />
-	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/<?php echo htmlspecialchars($color); ?>.css" type="text/css" />
+<!--	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/<?php echo htmlspecialchars($color); ?>.css" type="text/css" />
+-->
 
 	<?php $files = JHtml::_('stylesheet', 'templates/' . $this->template . '/css/general.css', null, false, true); ?>
 	<?php if ($files) : ?>
@@ -49,7 +68,9 @@ $this->direction = $doc->direction;
 		<link rel="stylesheet" href="<?php echo $file; ?>" type="text/css" />
 	<?php endforeach; ?>
 	<?php endif; ?>
+
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/<?php echo htmlspecialchars($color); ?>.css" type="text/css" />
+
 	<?php if ($this->direction == 'rtl') : ?>
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template_rtl.css" type="text/css" />
 		<?php if (file_exists(JPATH_SITE . '/templates/' . $this->template . '/css/' . $color . '_rtl.css')) : ?>
@@ -84,6 +105,9 @@ $this->direction = $doc->direction;
 		}
 	-->
 	</style>
+
+	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/error.css" type="text/css" />
+
 </head>
 	<body>
 		<div id="all">
@@ -92,7 +116,10 @@ $this->direction = $doc->direction;
 					<div class="logoheader">
 						<h1 id="logo">
 							<?php if ($logo) : ?>
-								<img src="<?php echo $this->baseurl; ?>/<?php echo htmlspecialchars($logo); ?>"  alt="<?php echo htmlspecialchars($params->get('sitetitle')); ?>" />
+								<a href="<?php echo JURI::base(); ?>">
+								<img 	src="<?php echo $this->baseurl; ?>/<?php echo htmlspecialchars($logo); ?>"
+										alt="<?php echo htmlspecialchars($params->get('sitetitle')); ?>" />
+								</a>
 							<?php else : ?>
 								<?php echo htmlspecialchars($params->get('sitetitle')); ?>
 							<?php endif; ?>
@@ -116,7 +143,9 @@ $this->direction = $doc->direction;
 					<div id="line">
 					</div><!-- end line -->
 				</div><!-- end header -->
+				
 				<div id="contentarea2" >
+				
 					<div class="left1" id="nav">
 						<h2 class="unseen">
 							<?php echo JText::_('TPL_LABYRINT3_NAVIGATION'); ?>
@@ -124,43 +153,50 @@ $this->direction = $doc->direction;
 						<?php $module = JModuleHelper::getModule('menu'); ?>
 						<?php echo JModuleHelper::renderModule($module); ?>
 					</div><!-- end navi -->
+					
 					<div id="wrapper2">
 						<div id="errorboxbody">
 							<h2>
-								<?php echo JText::_('JERROR_LAYOUT_PAGE_NOT_FOUND'); ?>
+								<?php echo JText::_('TPL_LABYRINT3_PAGE_NOT_FOUND'); ?>
 							</h2>
-							<h3><?php echo JText::_('JERROR_LAYOUT_ERROR_HAS_OCCURRED_WHILE_PROCESSING_YOUR_REQUEST'); ?></h3>
-							<p><?php echo JText::_('JERROR_LAYOUT_NOT_ABLE_TO_VISIT'); ?></p>
+							<h3><?php echo JText::_('TPL_LABYRINT3_ERROR_HAS_OCCURRED_WHILE_PROCESSING_YOUR_REQUEST'); ?></h3>
+							<p><?php echo JText::_('TPL_LABYRINT3_NOT_ABLE_TO_VISIT'); ?></p>
 							<ul>
-								<li><?php echo JText::_('JERROR_LAYOUT_AN_OUT_OF_DATE_BOOKMARK_FAVOURITE'); ?></li>
-								<li><?php echo JText::_('JERROR_LAYOUT_MIS_TYPED_ADDRESS'); ?></li>
-								<li><?php echo JText::_('JERROR_LAYOUT_SEARCH_ENGINE_OUT_OF_DATE_LISTING'); ?></li>
-								<li><?php echo JText::_('JERROR_LAYOUT_YOU_HAVE_NO_ACCESS_TO_THIS_PAGE'); ?></li>
+								<li><?php echo JText::_('TPL_LABYRINT3_AN_OUT_OF_DATE_BOOKMARK_FAVOURITE'); ?></li>
+								<li><?php echo JText::_('TPL_LABYRINT3_MIS_TYPED_ADDRESS'); ?></li>
+								<li><?php echo JText::_('TPL_LABYRINT3_SEARCH_ENGINE_OUT_OF_DATE_LISTING'); ?></li>
+								<li><?php echo JText::_('TPL_LABYRINT3_YOU_HAVE_NO_ACCESS_TO_THIS_PAGE'); ?></li>
 							</ul>
+							
 							<?php if (JModuleHelper::getModule('search')) : ?>
 								<div id="searchbox">
 									<h3 class="unseen">
 										<?php echo JText::_('TPL_LABYRINT3_SEARCH'); ?>
 									</h3>
 									<p>
-										<?php echo JText::_('JERROR_LAYOUT_SEARCH'); ?>
+										<?php echo JText::_('TPL_LABYRINT3_SEARCH'); ?>
 									</p>
 									<?php $module = JModuleHelper::getModule('search'); ?>
 									<?php echo JModuleHelper::renderModule($module); ?>
 								</div><!-- end searchbox -->
 							<?php endif; ?>
+							
 							<div><!-- start gotohomepage -->
 								<p>
-								<a href="<?php echo $this->baseurl; ?>/index.php" title="<?php echo JText::_('JERROR_LAYOUT_GO_TO_THE_HOME_PAGE'); ?>"><?php echo JText::_('JERROR_LAYOUT_HOME_PAGE'); ?></a>
+								<a href="<?php echo $this->baseurl; ?>/index.php"
+								   title="<?php echo JText::_('TPL_LABYRINT3_GO_TO_THE_HOME_PAGE'); ?>"
+								   ><?php echo JText::_('TPL_LABYRINT3_HOME_PAGE_LINE_START') . JURI::base() . JText::_('TPL_LABYRINT3_HOME_PAGE_LINE_END'); ?>
+								</a>
 								</p>
 							</div><!-- end gotohomepage -->
 							<h3>
-								<?php echo JText::_('JERROR_LAYOUT_PLEASE_CONTACT_THE_SYSTEM_ADMINISTRATOR'); ?>
+								<?php echo JText::_('TPL_LABYRINT3_PLEASE_CONTACT_THE_SYSTEM_ADMINISTRATOR'); ?>
 							</h3>
 							<h2>#<?php echo $this->error->getCode(); ?>&nbsp;<?php echo htmlspecialchars($this->error->getMessage(), ENT_QUOTES, 'UTF-8'); ?>
 							</h2>
 							<br />
 						</div><!-- end errorboxbody -->
+						
 					</div><!-- end wrapper2 -->
 				</div><!-- end contentarea2 -->
 				<?php if ($this->debug) :
@@ -168,17 +204,35 @@ $this->direction = $doc->direction;
 				endif; ?>
 			</div><!--end back -->
 		</div><!--end all -->
+		
 		<div id="footer-outer">
+		
+		<!-- ORIGINAL FOOTER
 			<div id="footer-sub">
 				<div id="footer">
+				
 				<p>
-					<?php echo JText::_('TPL_LABYRINT3_POWERED_BY'); ?>
+					<!--<?php echo JText::_('TPL_LABYRINT3_POWERED_BY'); ?>
 					<a href="http://www.joomla.org/">
 						Joomla!&#174;
 					</a>
 				</p>
+
+				</div><!-- end footer 
+			 </div><!-- end footer-sub 
+				
+		END ORIGINAL FOOTER -->		
+				
+			<div id="footer-sub">
+				<div id="footer" >
+					<?php $module = JModuleHelper::getModule('footer'); ?>
+					<?php echo JModuleHelper::renderModule($module); ?>
 				</div><!-- end footer -->
-			 </div><!-- end footer-sub -->
+			</div><!-- end footer-sub -->
+			 
+			 
+			 
 		</div><!-- end footer-outer-->
+		
 	</body>
 </html>

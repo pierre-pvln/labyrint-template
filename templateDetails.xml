@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
-<extension version="3.1" type="template" client="site" method="upgrade">
+<extension 
+	version="3.0"
+	type="template"
+	client="site"
+	method="upgrade">
 	<name>labyrint3</name>
-	<creationDate>17 may 2015</creationDate>
-	<author>Siteadmin Labyrint</author>
-	<authorEmail>admin@labyrint-coaching.nl</authorEmail>
-	<authorUrl>http://www.labyrint-coaching.nl</authorUrl>
-	<copyright>Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.</copyright>
+	<creationDate>22-07-2016</creationDate>
+	<author>Pierre Veelen</author>
+	<authorEmail>pierre.veelen@pvln.nl</authorEmail>
+	<authorUrl>http://www.pvln.nl</authorUrl>
+	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>3.1.0</version>
+	<version>3.1.2</version>
 	<description>TPL_LABYRINT3_XML_DESCRIPTION</description>
 
 	<files>
@@ -25,6 +29,7 @@
 		<filename>favicon.ico</filename>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
+		<filename>CHANGELOG.txt</filename>
 	</files>
 
 	<positions>
@@ -46,8 +51,7 @@
 		<position>position-14</position>
 	</positions>
 
-	<!-- 	For core templates, we also install/uninstall the language files in the core language folders.
-	-->
+	<!-- 	For core templates, we also install/uninstall the language files in the core language folders. -->
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_labyrint3.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_labyrint3.sys.ini</language>
@@ -120,4 +124,15 @@
 			</fieldset>
 		</fields>
 	</config>
+	
+	<!-- 	Information for the update server -->
+	<updateservers>
+		<server
+			type="extension"
+			priority="1"
+			name="Labyrint 3 Template Updates">
+			http://pvln.nl/images/updates/templates/labyrint3.xml
+		</server>
+	</updateservers>
+	
 </extension>

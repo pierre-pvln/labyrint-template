@@ -1,0 +1,16 @@
+-----------------------------
+# LABYRINT3 Template Changelog
+------------------------------
+### v.3.1.2
+### Date 22-07-2016
+* Added automatic update functionality in template
+
+### v.3.1.1
+### Date 17-07-2016
+### Bug fixes
+* 404 Error page handling updated to show clean 404 error page (error.php, error.css)
+* Added error text for 404 page in language files (en-GB.tpl_labyrint3.ini, nl-NL.tpl_labyrint3.ini)
+
+
+### Previous Versions
+###### ... TO BE DOCUMENTED ...
