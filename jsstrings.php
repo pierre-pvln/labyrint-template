@@ -3,6 +3,8 @@
  * @package     Joomla.Site
  * @subpackage  Templates.labyrint3
  *
+ * @copyright 	Copyright (C) 2016 Pierre Veelen. All rights reserved.
+ *				This code is based on Beez3 template
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */

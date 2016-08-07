@@ -3,25 +3,24 @@
  * @package     Joomla.Site
  * @subpackage  Templates.labyrint3
  *
+ * @copyright 	Copyright (C) 2016 Pierre Veelen. All rights reserved.
+ *				This code is based on Beez3 template
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+ *
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  *
  * ###############################################################
- * Orginal error.php from Beez3 template
- * 
  * Author:	Pierre Veelen
  * E-mail:	pierre.veelen@pvln.nl
  * Date:	2016-07-14
  *
  * Brief description of what is used for:
  * ======================================
- * TO BE SUPPLIED
+ * custom error page for labyrint website
+ *
+ * See also https://docs.joomla.org/Custom_error_pages
  *
  * ###############################################################
- *  
- * 
- * See also" https://docs.joomla.org/Custom_error_pages 
- *
  */
 
 defined('_JEXEC') or die;
@@ -56,8 +55,6 @@ $this->direction = $doc->direction;
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/position.css" type="text/css" media="screen,projection" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/layout.css" type="text/css" media="screen,projection" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/print.css" type="text/css" media="Print" />
-<!--	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/<?php echo htmlspecialchars($color); ?>.css" type="text/css" />
--->
 
 	<?php $files = JHtml::_('stylesheet', 'templates/' . $this->template . '/css/general.css', null, false, true); ?>
 	<?php if ($files) : ?>
@@ -89,22 +86,6 @@ $this->direction = $doc->direction;
 	<!--[if lt IE 9]>
 		<script src="<?php echo JUri::root(true); ?>/media/jui/js/html5.js"></script>
 	<![endif]-->
-
-	<style type="text/css">
-	<!--
-		#errorboxbody
-		{margin:30px}
-		#errorboxbody h2
-		{font-weight:normal;
-		font-size:1.5em}
-		#searchbox
-		{background:#eee;
-		padding:10px;
-		margin-top:20px;
-		border:solid 1px #ddd
-		}
-	-->
-	</style>
 
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/error.css" type="text/css" />
 
@@ -206,32 +187,12 @@ $this->direction = $doc->direction;
 		</div><!--end all -->
 		
 		<div id="footer-outer">
-		
-		<!-- ORIGINAL FOOTER
-			<div id="footer-sub">
-				<div id="footer">
-				
-				<p>
-					<!--<?php echo JText::_('TPL_LABYRINT3_POWERED_BY'); ?>
-					<a href="http://www.joomla.org/">
-						Joomla!&#174;
-					</a>
-				</p>
-
-				</div><!-- end footer 
-			 </div><!-- end footer-sub 
-				
-		END ORIGINAL FOOTER -->		
-				
 			<div id="footer-sub">
 				<div id="footer" >
 					<?php $module = JModuleHelper::getModule('footer'); ?>
 					<?php echo JModuleHelper::renderModule($module); ?>
 				</div><!-- end footer -->
 			</div><!-- end footer-sub -->
-			 
-			 
-			 
 		</div><!-- end footer-outer-->
 		
 	</body>

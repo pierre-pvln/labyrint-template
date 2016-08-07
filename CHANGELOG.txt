@@ -1,9 +1,13 @@
 -----------------------------
 # LABYRINT3 Template Changelog
 ------------------------------
+### v.3.1.3
+### Date 01-08-2016
+* Code cleaned
+
 ### v.3.1.2
 ### Date 22-07-2016
-* Added automatic update functionality in template
+* Added automatic update functionality for template
 
 ### v.3.1.1
 ### Date 17-07-2016
