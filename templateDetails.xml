@@ -6,13 +6,13 @@
 	client="site"
 	method="upgrade">
 	<name>labyrint3</name>
-	<creationDate>22-07-2016</creationDate>
+	<creationDate>07-08-2016</creationDate>
 	<author>Pierre Veelen</author>
 	<authorEmail>pierre.veelen@pvln.nl</authorEmail>
 	<authorUrl>http://www.pvln.nl</authorUrl>
 	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>3.1.3</version>
+	<version>3.2.1</version>
 	<description>TPL_LABYRINT3_XML_DESCRIPTION</description>
 
 	<files>
@@ -122,6 +122,17 @@
 					description="TPL_LABYRINT3_FIELD_HEADER_BACKGROUND_COLOR_DESC" />
 
 			</fieldset>
+			
+			<fieldset name="Google Analytics">
+				<field name="UniversalAnalyticsCode" type="text" default="UA-123456-12"
+					label="TPL_LABYRINT3_FIELD_GOOGLE_ANALYTICS_LABEL"
+					description="TPL_LABYRINT3_FIELD_GOOGLE_ANALYTICS_DESC" />
+					
+				<field name="SiteVerificationCode" type="text" default="googleabcdef0123456789"
+					label="TPL_LABYRINT3_FIELD_GOOGLE_VERIFICATION_LABEL"
+					description="TPL_LABYRINT3_FIELD_GOOGLE_VERIFICATION_DESC" />
+			</fieldset>
+			
 		</fields>
 	</config>
 	
