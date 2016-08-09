@@ -123,14 +123,36 @@
 
 			</fieldset>
 			
-			<fieldset name="Google Analytics">
-				<field name="UniversalAnalyticsCode" type="text" default="UA-123456-12"
-					label="TPL_LABYRINT3_FIELD_GOOGLE_ANALYTICS_LABEL"
-					description="TPL_LABYRINT3_FIELD_GOOGLE_ANALYTICS_DESC" />
-					
-				<field name="SiteVerificationCode" type="text" default="googleabcdef0123456789"
-					label="TPL_LABYRINT3_FIELD_GOOGLE_VERIFICATION_LABEL"
-					description="TPL_LABYRINT3_FIELD_GOOGLE_VERIFICATION_DESC" />
+			<fieldset name="Labyrint3Analytics">
+				<field	name="AnalyticsType" 
+						type="radio"
+						default="universal"
+						label="TPL_LABYRINT3_FIELD_GA_TYPE_LABEL"
+						description="TPL_LABYRINT3_FIELD_GA_TYPE_DESC"
+				>
+						<option value="universal">Universal</option>
+						<option value="asynchronous">Asynchronous</option>
+                </field>
+				
+				<field	name="AnalyticsCode"
+						type="text"
+						default="UA-XXXXX-X"
+						label="TPL_LABYRINT3_FIELD_GA_CODE_LABEL"
+						description="TPL_LABYRINT3_FIELD_GA_CODE_DESC"
+				/>
+				
+				<field 	name="AnalyticsDomain"
+						type="text"
+						default="auto"
+						label="TPL_LABYRINT3_FIELD_GA_DOMAIN_LABEL"
+						description="TPL_LABYRINT3_FIELD_GA_DOMAIN_DESC"
+				/>
+                				
+				<field	name="VerificationCode"
+						type="text"
+						default=""
+						label="TPL_LABYRINT3_FIELD_GOOGLE_VERIFICATION_LABEL"
+						description="TPL_LABYRINT3_FIELD_GOOGLE_VERIFICATION_DESC" />
 			</fieldset>
 			
 		</fields>
