@@ -6,13 +6,13 @@
 	client="site"
 	method="upgrade">
 	<name>labyrint3</name>
-	<creationDate>07-08-2016</creationDate>
+	<creationDate>10-08-2016</creationDate>
 	<author>Pierre Veelen</author>
 	<authorEmail>pierre.veelen@pvln.nl</authorEmail>
 	<authorUrl>http://www.pvln.nl</authorUrl>
 	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>3.2.1</version>
+	<version>3.2.2</version>
 	<description>TPL_LABYRINT3_XML_DESCRIPTION</description>
 
 	<files>

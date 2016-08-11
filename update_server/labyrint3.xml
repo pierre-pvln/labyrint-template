@@ -9,10 +9,10 @@
 		<element>labyrint3</element>
 		<type>template</type>
 		<client>0</client>
-		<version>3.2.1</version>
+		<version>3.2.2</version>
 		<infourl title="Labyrint3 template">http://pvln.nl</infourl>
 		<downloads>
-			<downloadurl type="upgrade" format="zip">http://pvln.nl/images/updates/templates/labyrint3_v3.2.1.zip</downloadurl>
+			<downloadurl type="upgrade" format="zip">http://pvln.nl/images/updates/templates/labyrint3_v3.2.2.zip</downloadurl>
 		</downloads>
 		<targetplatform name="joomla" version="3" />
 	</update>

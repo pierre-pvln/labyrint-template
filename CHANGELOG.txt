@@ -1,6 +1,10 @@
 -----------------------------
 # LABYRINT3 Template Changelog
 ------------------------------
+### v.3.2.2
+### Date 2016-08-10
+* Added google analytics code in index.php
+
 ### v.3.2.1
 ### Date 2016-08-07
 * Added google tab in template view back-end

@@ -4,9 +4,9 @@
  * @subpackage  Templates.labyrint3
  * 
  * @copyright 	Copyright (C) 2016 Pierre Veelen. All rights reserved.
- *				This code is based on Beez3 template
+ *				This code is based on Beez3 template and GoogleAnalytics plugin code
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
- *
+ * @copyright   Copyright (C) 2012 PB Web Development. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -40,6 +40,13 @@ $bootstrap      = explode(',', $templateparams->get('bootstrap'));
 $jinput         = JFactory::getApplication()->input;
 $option         = $jinput->get('option', '', 'cmd');
 
+// Get analytics params       
+$GAType 		= $this->params->get('AnalyticsType', '');
+$trackerCode 	= $this->params->get('AnalyticsCode', '');
+$domain 		= $this->params->get('AnalyticsDomain', 'auto');
+$verify 		= $this->params->get('VerificationCode', '');
+$analyticsjavascript = '';
+
 if (in_array($option, $bootstrap))
 {
 	// Load optional rtl Bootstrap css and Bootstrap bugfixes
@@ -68,6 +75,52 @@ $doc->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/respond.src.js', 'text/javascript');
 $doc->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/template.js', 'text/javascript');
 
+// create the analytics string
+
+if($verify)
+{
+	$analyticsjavascript .= "
+	<meta name=\"google-site-verification\" content=\"".$verify."\" />
+	";
+}
+
+$analyticsjavascript .= "
+<!-- Google Analytics from Labyrint3 template by pvln.nl starts here. -->
+";
+
+if ($GAType == 'asynchronous')
+{
+    $analyticsjavascript .= "
+<script type=\"text/javascript\"> 
+var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', '" . $trackerCode . "']);
+";
+    $analyticsjavascript .= "_gaq.push(['_trackPageview']);
+ (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+<!-- Asynchronous Google Analytics from Labyrint3 template by pvln.nl ends here. -->
+";
+}
+
+if ($GAType == 'universal')
+{
+   $analyticsjavascript .= "
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '" . $trackerCode . "', '" . $domain . "');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics from Labyrint3 template by pvln.nl ends here. -->
+";
+}
 ?>
 
 <!DOCTYPE html>
@@ -84,6 +137,9 @@ $doc->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/
 		<!--[if IE 7]>
 		<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/ie7only.css" rel="stylesheet" type="text/css" />
 		<![endif]-->
+		
+	<?php echo $analyticsjavascript ?>;
+	
 	</head>
 	<body id="shadow">
 		<?php if ($color == 'image'):?>
