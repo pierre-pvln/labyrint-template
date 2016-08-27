@@ -159,7 +159,10 @@ if ($GAType == 'universal')
 					<div class="logoheader">
 						<h1 id="logo">
 						<?php if ($logo) : ?>
-							<img src="<?php echo $this->baseurl; ?>/<?php echo htmlspecialchars($logo); ?>"  alt="<?php echo htmlspecialchars($templateparams->get('sitetitle')); ?>" />
+							<a href="<?php echo JURI::base(); ?>">
+							<img 	src="<?php echo $this->baseurl; ?>/<?php echo htmlspecialchars($logo); ?>"
+									alt="<?php echo htmlspecialchars($templateparams->get('sitetitle')); ?>" />
+							</a>		
 						<?php endif;?>
 						<?php if (!$logo AND $templateparams->get('sitetitle')) : ?>
 							<?php echo htmlspecialchars($templateparams->get('sitetitle')); ?>

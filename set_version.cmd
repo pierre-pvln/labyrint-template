@@ -4,4 +4,4 @@
 :: Revision: 2016 08 01 - initial version
 
 :: -VERSION
-SET version=v3.2.2
+SET version=v3.2.3

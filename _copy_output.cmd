@@ -7,7 +7,7 @@
 @ECHO off
 SETLOCAL ENABLEEXTENSIONS
 
-xcopy output\* C:\Users\Siteadmin_2\OneDrive\share_it\joomla_extensions\templates\labyrint3\* /y
+xcopy output\* C:\Users\Siteadmin_2\OneDrive\developed_joomla_extensions\templates\labyrint3\* /y
 
 :: wait some time and exit the script
 timeout /T 5
