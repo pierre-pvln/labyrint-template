@@ -8,11 +8,11 @@
 	<name>labyrint3</name>
 	<creationDate>10-08-2016</creationDate>
 	<author>Pierre Veelen</author>
-	<authorEmail>pierre.veelen@pvln.nl</authorEmail>
+	<authorEmail>pierre@pvln.nl</authorEmail>
 	<authorUrl>http://www.pvln.nl</authorUrl>
 	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>3.2.3</version>
+	<version>3.2.4</version>
 	<description>TPL_LABYRINT3_XML_DESCRIPTION</description>
 
 	<files>
@@ -163,6 +163,12 @@
 		<server
 			type="extension"
 			priority="1"
+			name="Labyrint 3 Template Updates">
+			http://update.pvln.nl/joomla/templates/labyrint3/labyrint3.xml
+		</server>
+		<server
+			type="extension"
+			priority="5"
 			name="Labyrint 3 Template Updates">
 			http://pvln.nl/images/updates/templates/labyrint3.xml
 		</server>
